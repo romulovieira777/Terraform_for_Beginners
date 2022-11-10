@@ -1,0 +1,8 @@
+Sites
+
+Terraform
+https://github.com/romulovieira777/Terraform_for_Beginners.git
+
+
+Visual Studio Code
+https://code.visualstudio.com/download
