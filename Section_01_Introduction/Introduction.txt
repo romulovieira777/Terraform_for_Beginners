@@ -6,3 +6,7 @@ https://github.com/romulovieira777/Terraform_for_Beginners.git
 
 Visual Studio Code
 https://code.visualstudio.com/download
+
+
+Terraform Install
+https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
