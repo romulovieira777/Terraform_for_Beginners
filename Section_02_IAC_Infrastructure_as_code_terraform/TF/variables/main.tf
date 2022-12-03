@@ -25,6 +25,11 @@ variable "mymapvar" {
     }
 }
 
+variable "myinputvat" {
+    type = string
+    description = "plz enter a vpc name"
+}
+
 resource "aws_vpc" "myVPC" {
     cidr_block = "10.10.10.0/24"
 
