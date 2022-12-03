@@ -9,4 +9,4 @@ https://code.visualstudio.com/download
 
 
 Terraform Install
-https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli"
