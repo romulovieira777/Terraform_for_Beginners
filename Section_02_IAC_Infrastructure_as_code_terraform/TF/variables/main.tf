@@ -1,3 +1,9 @@
+provider "aws" {
+    region = "us-east-1"
+    access_key = ""
+    secret_key = ""  
+}
+
 variable "mystringvar" {
     type = string
     default = "my-first-vpc"
