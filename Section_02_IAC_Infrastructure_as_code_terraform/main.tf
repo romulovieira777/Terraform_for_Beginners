@@ -5,3 +5,7 @@ provider "aws" {
 module "ec2module" {
     source = "./EC2"
 }
+
+output "mainOutput" {
+    value = module.ec2module.InsideModule
+}
