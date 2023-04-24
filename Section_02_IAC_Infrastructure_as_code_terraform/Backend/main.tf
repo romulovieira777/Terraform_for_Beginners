@@ -13,3 +13,12 @@ resource "aws_instance" "DB" {
 resource "aws_s3_bucket" "terraform_state" {
     cidr_block = "10.0.0.0/16"
 }
+
+resource "aws_vpc" "myvpc" {
+    cidr_block = "10.0.0.0/16" 
+}
+
+resource "aws_vpc" "mysecondvpc" {
+    cidr_block = "10.10.10..0/24"
+  
+}
