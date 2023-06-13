@@ -22,3 +22,29 @@ resource "aws_vpc" "mysecondvpc" {
     cidr_block = "10.10.10..0/24"
   
 }
+
+resource "aws_instance" "Web" {
+    ami = ""
+    instance_type = "t2.micro"
+    dependes_on = [aws_instance.DB]
+}
+
+resource "aws_instance" "myEC2" {
+    ami = ""
+    instance_type = "t2.micro"
+
+    tags = {
+        Name = "My Server"
+    }
+}
+
+data "aws_instance" "myserver" {
+    filter {
+        name = "tag:Name"
+        values = ["My Server"]
+    }
+}
+
+outup "myservers" {
+    value = data.aws_instance.myserver.availability_zone
+}
